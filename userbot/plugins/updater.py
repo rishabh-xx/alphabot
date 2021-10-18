@@ -65,7 +65,7 @@ async def gen_chlog(repo, diff):
 
 async def print_changelogs(event, ac_br, changelog):
     changelog_str = (
-        f"**New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
+        f"**BsDk New UPDATE available for [{ac_br}]:\n\nCHANGELOG:**\n`{changelog}`"
     )
     if len(changelog_str) > 4096:
         await event.edit("`Changelog is too big, view the file to see it.`")
@@ -107,7 +107,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     sandy = await event.edit(
-        "`Successfully Updated!\n" "Bot is restarting... Wait for a minute!`"
+        "`Successfully Updated!\n" "Bot is restarting... RuK ja lovde 1-2 minute!`"
     )
     await event.client.reload(sandy)
 
@@ -255,7 +255,7 @@ async def upstream(event):
     # Special case for deploy
     if changelog == "" and not force_update:
         await event.edit(
-            "\n`CATUSERBOT is`  **up-to-date**  `with`  "
+            "\n`ALPHAUSERBOT is`  **up-to-date**  `with`  "
             f"**{UPSTREAM_REPO_BRANCH}**\n"
         )
         return repo.__del__()
@@ -263,7 +263,7 @@ async def upstream(event):
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
         return await event.respond(
-            f"do `{cmdhd}update deploy` to update the catuserbot"
+            f"do `{cmdhd}update deploy` to update the alphauserbot"
         )
 
     if force_update:
