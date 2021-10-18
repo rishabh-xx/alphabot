@@ -68,8 +68,8 @@ def verify_cond(catarray, text):
 
 def pack_name(userid, pack, is_anim):
     if is_anim:
-        return f"catuserbot_{userid}_{pack}_anim"
-    return f"catuserbot_{userid}_{pack}"
+        return f"AlphaBot_{userid}_{pack}_anim"
+    return f"AlphaBot_{userid}_{pack}"
 
 
 def char_is_emoji(character):
