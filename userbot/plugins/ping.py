@@ -29,13 +29,13 @@ async def _(event):
         end = datetime.now()
         tms = (end - start).microseconds / 1000
         ms = round((tms - 0.6) / 3, 3)
-        await catevent.edit(f"**☞ Average Pong!**\n➥ {ms} ms")
+        await catevent.edit(f"**☞ Average JinDa Hu BsDk!**\n➥ {ms} ms")
     else:
-        catevent = await edit_or_reply(event, "<b><i>☞ Pong!</b></i>", "html")
+        catevent = await edit_or_reply(event, "<b><i>☞ JinDa Hu BsDk!</b></i>", "html")
         end = datetime.now()
         ms = (end - start).microseconds / 1000
         await catevent.edit(
-            f"<b><i>☞ Pong</b></i>\n➥ {ms} <b><i>ms\n➥ Bot of {hmention}</b></i>",
+            f"<b><i>☞  JinDa Hu BsDk</b></i>\n➥ {ms} <b><i>ms\n➥ Bot of {hmention}</b></i>",
             parse_mode="html",
         )
 
