@@ -45,7 +45,7 @@ class Config(object):
     # set this with same app name you given for heroku
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     # Owner id to show profile link of given id as owner
-    OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
+    OWNER_ID = int(os.environ.get("1997204168") or 0)
     # set this with group id so it keeps notifying about your tagged messages or pms
     PM_LOGGER_GROUP_ID = int(
         os.environ.get("-1001551399136")
