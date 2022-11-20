@@ -21,7 +21,7 @@ class Config(object):
     TG_BOT_TOKEN = os.environ.get("2047391714:AAFvTBUmzEkRUHvGaRy6e9UCgufLHpSGox4") or os.environ.get(
         "TG_BOT_TOKEN_BF_HER", None
     )
-    TG_BOT_USERNAME = @Bb_AlpHa_xD_bot
+    TG_BOT_USERNAME = Bb_AlpHa_xD_bot
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
     TZ = os.environ.get("TZ", "Asia/Kolkata")
     # set this with required cat repo link
